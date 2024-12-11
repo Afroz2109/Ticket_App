@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button, Row, Col, Container, Card } from "react-bootstrap";
 import LoginImg from "../assets/login.png";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Login({setUser}) {
     const [email, setEmail] = useState(""); 
@@ -63,8 +63,8 @@ export default function Login({setUser}) {
                                     >
                                         Login
                                     </Button>
-                                    <div style={{color:'black',marginLeft:'25%',marginTop:'5px'}}>
-                                             New user?<a style={{color:'blue',textDecoration:'none'}} href="/signup"> signup here</a>
+                                   <div style={{ color: 'black', marginLeft: '25%', marginTop: '5px' }}>
+                                        New user? <Link to="/signup" style={{ color: 'blue', textDecoration: 'none' }}>signup here</Link>
                                     </div>
                                 </Form>
                             </Card.Body>
