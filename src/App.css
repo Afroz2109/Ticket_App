@@ -1,0 +1,76 @@
+.auth-container{
+    background-color: rgb(233, 142, 127);
+}
+.login {
+    background-color: rgb(243, 90, 67);
+    border: none !important;
+    width: 100%;
+}
+.inner-auth-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-container {
+    padding: 10px;
+    font-weight: 800;
+    color: rgb(103, 75, 3) !important;
+  }
+  span.navbar-brand {
+    font-family: sans-serif;
+}
+
+@media (min-width: 200px) and (max-width: 1000px) {
+    .loginImg {
+        display: none;
+    }
+    .signupImg {
+        display: none;
+    }
+    .fullwidth {
+        width: max-content;
+    }
+}
+
+@media(min-width:360px) {
+
+    div.inner-auth-container {
+        margin-left: -1%;
+    }
+    h2.heading {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 5% !important;
+    }
+    .logincard.card {
+        margin-top: 3% !important;
+        width: 22rem;
+    }
+    div.container {
+        width: 100%;
+    }
+    span.navbar-brand {
+        font-family: sans-serif;
+    }
+    
+}
+
+@media(min-width: 700px) {
+
+    h2.heading {
+        font-size: 1.5rem;
+        width: max-content;
+        margin-left: 7%;
+    }
+    .logincard.card {
+        margin-top: 15% !important;
+        margin-left: 9% !important;
+    }
+}
+
+@media (min-width:1200px) {
+    .logincard.card {
+        margin-top: 23% !important;
+    }
+}
