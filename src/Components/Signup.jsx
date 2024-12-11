@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button, Row, Col, Container, Card } from "react-bootstrap";
 import LoginImg from '../assets/Signup.webp';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Signup({setUser}) {
     const [email, setEmail]= useState('');
@@ -51,7 +51,7 @@ export default function Signup({setUser}) {
 
                              <div style={{marginTop:'5px',marginLeft:'12%'}}>
                                  Already have an account? 
-                                 <a style={{color:'blue',textDecoration:'none'}} href="/login"> Login here</a>
+                                 <Link to="/login" style={{ color: 'blue', textDecoration: 'none' }}>login here</Link>
                              </div>
                       </Form>
                        </Card.Body>
